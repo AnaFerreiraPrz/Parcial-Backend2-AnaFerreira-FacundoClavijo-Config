@@ -1,4 +1,4 @@
-#spring:
+#spring: j
 #  config:
 #    activate:
 #      on-profile: prd
