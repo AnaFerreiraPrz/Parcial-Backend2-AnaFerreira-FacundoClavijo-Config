@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: catalogRoute
+            uri: lb://catalog-service/
+            predicates:
+              - Path=/catalog/**
