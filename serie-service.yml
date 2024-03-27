@@ -15,6 +15,6 @@ spring:
       username: usr-serie
       password: pwd-serie
 
-  queue:
-    serie:
-      name: SerieQueue
+queue:
+  serie:
+    name: SerieQueue
