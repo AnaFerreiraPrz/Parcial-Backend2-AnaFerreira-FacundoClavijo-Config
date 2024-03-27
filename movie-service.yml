@@ -19,4 +19,4 @@ spring:
 
 queue:
   movie:
-    name: testingraro
+    name: MovieQueue
