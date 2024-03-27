@@ -1,6 +1,10 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
 
+queue:
+  serie:
+    name: SerieQueue
+    
 spring:
   rabbitmq:
     username: guest
@@ -15,6 +19,3 @@ spring:
       username: usr-serie
       password: pwd-serie
 
-queue:
-  serie:
-    name: SerieQueue
