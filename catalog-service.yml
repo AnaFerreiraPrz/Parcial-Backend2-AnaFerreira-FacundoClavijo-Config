@@ -39,7 +39,7 @@ management:
 resilience4j:
   circuitbreaker:
     instances:
-      students:
+      series:
         slidingWindowType: COUNT_BASED
         slidingWindowSize: 5
         failureRateThreshold: 50
@@ -58,7 +58,7 @@ resilience4j:
   #  Lo que vemos en el retry es cuanto tiempo queremos esperar entre cada uno de los reintentos
   retry:
     instances:
-      students:
+      series:
         waitDuration: 1000
         #        Le decimos la cantidad de reintentos que queremos hacer
         maxAttempts: 3
